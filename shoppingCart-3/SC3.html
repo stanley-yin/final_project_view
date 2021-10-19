@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="SC3.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- checkline 進度條 -->
+        <div class="checkline-box d-flex justify-content-center">
+            <div class="checkline-item">
+                <div class="checkline-circle-1">1</div>
+                <div class="row justify-content-center">購物車</div>
+            </div>
+            <div class="checkline-line"></div>
+            <div class="checkline-item">
+                <div class="checkline-circle-1">2</div>
+                <div class="row justify-content-center">填寫資料</div>
+            </div>
+            <div class="checkline-line"></div>
+            <div class="checkline-item">
+                <div class="checkline-circle-1">3</div>
+                <div class="row justify-content-center">確認訂單</div>
+            </div>
+        </div>
+        <!-- 完成訂單文字 -->
+        <!-- a連結到react要更改 -->
+        <div class="finished-word text-center"><i class="fas fa-check-circle"></i>訂單送出成功 <br>
+            可至<a href="/order-detail-client/orderDetailCient.html">會員中心</a>查看歷史訂單資訊，或<a href="">繼續購物</a></div>
+        <!-- cart購物車 -->
+        <div class="row">
+            <div class="cart-box">
+                <!-- 購物車標題 -->
+                <div class="cart-title text-center ">
+                    購物車 (共2件，合計800元)
+                    <div class="arrow-icon"><i class="fas fa-chevron-down"></i></div>
+                </div>
+
+                <div class="cart-content">
+                    <!-- 購物車欄位標題-->
+                    <div class="cart-subtitle d-flex">
+                        <div class="product-info">商品資料</div>
+                        <div class="discount">優惠</div>
+                        <div class="per-price">單價</div>
+                        <div class="amount">數量</div>
+                        <div class="subtotal">小計</div>
+                    </div>
+                    <!-- 商品(一列) -->
+                    <div class="cart-column d-flex align-items-center">
+                        <div class="product-info d-flex align-items-center">
+                            <div class="product-img"></div>
+                            <div class="product-description">善存科技 N95醫用口罩 (5入/單包)【杏一】</div>
+                        </div>
+                        <div class="discount"><span></span>
+                        </div>
+                        <div class="per-price"><span>$400</span></div>
+                        <!-- 商品數量 -->
+                        <div class="amount">
+                            <div class="number">1</div>
+                        </div>
+                        <div class="subtotal"><span>$400</span></div>
+                    </div>
+                    <!-- 商品(一列) -->
+                    <div class="cart-column d-flex align-items-center">
+                        <div class="product-info d-flex align-items-center">
+                            <div class="product-img"></div>
+                            <div class="product-description">善存科技 N95醫用口罩 (5入/單包)【杏一】</div>
+                        </div>
+                        <div class="discount"><span></span>
+                        </div>
+                        <div class="per-price"><span>$400</span></div>
+                        <!-- 商品數量 -->
+                        <div class="amount">
+                            <div class="number">1</div>
+                        </div>
+                        <div class="subtotal"><span>$400</span></div>
+                    </div>
+
+                    <!-- 全站優惠 -->
+                    <div class="AllStore-discount-box">
+                        <div class="column-1">已享有之優惠</div>
+                        <div class="column-2 d-flex align-items-center">
+                            <div class="color-box">全站優惠</div>
+                            <div class="discount-word">全站滿500元免運</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 訂單明細 -->
+        <div class="row">
+            <div class="order-detail-box">
+                <div class="order-detail-title">訂單編號：A1233 </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="subtitle">訂購人資訊</div>
+                        <div class="detail-box">
+                            姓名：王曉華
+                            <br>
+                            電話：0928828818
+                            <br>
+                            信箱：xiaohai@gmail.com
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="subtitle">送貨資訊</div>
+                        <div class="detail-box">
+
+                            收件人姓名：王曉華
+                            <br>
+                            收件人電話：0929919919
+                            <br>
+                            運送方式：宅配
+                            <br>
+                            運送地址：台北市中山區得名街14號
+                         
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="subtitle">付款資訊</div>
+                        <div class="detail-box">
+                            付款方式：信用卡
+                            <br>
+                            付款狀態：已付款
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script>
+        const cartTitle = document.querySelector('.cart-title')
+
+        const cartBox = document.querySelector('.cart-box')
+        const arrowIcon = document.querySelector('.arrow-icon')
+
+
+        cartTitle.addEventListener('click', () => {
+            cartBox.classList.toggle('show')
+            arrowIcon.classList.toggle('rotate')
+
+        })
+    </script>
+</body>
+
+</html>

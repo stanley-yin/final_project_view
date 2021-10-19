@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./ShoppingCart.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- checkline 進度條 -->
+        <div class="checkline-box d-flex justify-content-center">
+            <div class="checkline-item">
+                <div class="checkline-circle-1">1</div>
+                <div class="row justify-content-center">購物車</div>
+            </div>
+            <div class="checkline-line"></div>
+            <div class="checkline-item">
+                <div class="checkline-circle-2">2</div>
+                <div class="row justify-content-center">填寫資料</div>
+            </div>
+            <div class="checkline-line"></div>
+            <div class="checkline-item">
+                <div class="checkline-circle-2">3</div>
+                <div class="row justify-content-center">確認訂單</div>
+            </div>
+        </div>
+        <!-- cart購物車 -->
+        <div class="row">
+            <div class="cart-box">
+                <!-- 購物車標題 -->
+                <div class="cart-title">
+                    購物車
+                </div>
+                <!-- 購物車欄位標題-->
+                <div class="cart-subtitle d-flex">
+                    <div class="product-info">商品資料</div>
+                    <div class="discount">優惠</div>
+                    <div class="per-price">單價</div>
+                    <div class="amount">數量</div>
+                    <div class="subtotal">小計</div>
+                    <div class="delete"></div>
+                </div>
+                <!-- 商品(一列) -->
+                <div class="cart-column d-flex align-items-center">
+                    <div class="product-info d-flex align-items-center">
+                        <div class="product-img"></div>
+                        <div class="product-description">Lorem ipsum dolor sit, dolor sit dolor sit</div>
+                    </div>
+                    <div class="discount"><span></span>
+                    </div>
+                    <div class="per-price"><span>$400</span></div>
+                    <!-- 商品數量 -->
+                    <div class="amount">
+                        <!-- 增減按鈕 -->
+                        <!-- 之後icon要改成react的 -->
+                        <div class="plus-minus-btn d-flex">
+                            <div class="minus d-flex"><i class="fas fa-minus"></i></div>
+                            <div class="number">1</div>
+                            <div class="plus d-flex"><i class="fas fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="subtotal"><span>$400</span></div>
+                    <div class="delete"><i class="fas fa-times"></i></div>
+                </div>
+                <!-- 商品(一列) -->
+                <div class="cart-column d-flex align-items-center">
+                    <div class="product-info d-flex align-items-center">
+                        <div class="product-img"></div>
+                        <div class="product-description">Lorem ipsum dolor sit, dolor sit dolor sit</div>
+                    </div>
+                    <div class="discount"><span></span>
+                    </div>
+                    <div class="per-price"><span>$400</span></div>
+                    <!-- 商品數量 -->
+                    <div class="amount">
+                        <!-- 增減按鈕 -->
+                        <!-- 之後icon要改成react的 -->
+                        <div class="plus-minus-btn d-flex">
+                            <div class="minus d-flex"><i class="fas fa-minus"></i></div>
+                            <div class="number">1</div>
+                            <div class="plus d-flex"><i class="fas fa-plus"></i></div>
+                        </div>
+                    </div>
+                    <div class="subtotal"><span>$400</span></div>
+                    <div class="delete"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- 全站優惠 -->
+                <div class="AllStore-discount-box">
+                    <div class="column-1">已享有之優惠</div>
+                    <div class="column-2 d-flex align-items-center">
+                        <div class="color-box">全站優惠</div>
+                        <div class="discount-word">全站滿500元免運</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 送貨及付款方式(左)、訂單資訊(右) -->
+        <div class="row justify-content-between">
+            <!-- 送貨及付款(左) -->
+            <div class="delivery-payment-box">
+                <div class="delivery-payment-title">付款及送貨方式</div>
+                <!-- 選項要拆成react元件 -->
+                <div class="dp-select-area">
+                    <div class="subtitle">送貨地點</div>
+                    <select name="" id="" class="dp-select">
+                        <option value="">台灣</option>
+                        <option value="">離島</option>
+                    </select>
+                    <div class="subtitle">送貨方式</div>
+                    <select name="" id="" class="dp-select">
+                        <option value="">宅配</option>
+                        <option value="">門市自取</option>
+                        <option value="">超商自取</option>
+                    </select>
+                    <div class="subtitle">付款方式</div>
+                    <select name="" id="" class="dp-select">
+                        <option value="">信用卡</option>
+                        <option value="">轉帳</option>
+                    </select>
+                </div>
+            </div>
+            <!-- 訂單資訊框(右) -->
+            <div class="summary-box">
+                <div class="summary-title">訂單資訊</div>
+                <div class="summary-detail-box">
+                    <div class="summary-detail d-flex justify-content-between">
+                        <div class="subject">小計</div>
+                        <div class="price text-right">$800</div>
+                    </div>
+                    <div class="summary-detail d-flex justify-content-between">
+                        <div class="subject">運費</div>
+                        <div class="price text-right">$0</div>
+                    </div>
+                    <div class="border"></div>
+                    <div class="summary-detail d-flex justify-content-between">
+                        <div class="subject">總計</div>
+                        <div class="price text-right">$800</div>
+                    </div>
+                    <!-- 送出按鈕，換成react元件 -->
+                    <a href="#" class="checkout-btn">前往結帳</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

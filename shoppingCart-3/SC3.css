@@ -1,0 +1,261 @@
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+/* Css reset */
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  /* border: 1px solid #ECEBEB; */
+  height: 900px;
+}
+
+.checkline-box {
+  margin: 50px;
+}
+.checkline-item {
+  width: 62px;
+}
+
+/* 深色正在進行的圓圈 */
+.checkline-circle-1 {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: #00a0f0;
+  color: white;
+  font-size: 31px;
+  text-align: center;
+  line-height: 62px;
+  margin-bottom: 10px;
+}
+
+/* 淺色尚未進行的圓圈 */
+.checkline-circle-2 {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: #aad7ee;
+  color: white;
+  font-size: 31px;
+  text-align: center;
+  line-height: 62px;
+  margin-bottom: 10px;
+}
+
+.checkline-line {
+  /* position: absolute; */
+  width: 186px;
+  height: 2px;
+  background-color: #aad7ee;
+  margin-top: 31px; /* 線要在圓心的一半 62/2=31 */
+}
+
+/* 購物車欄位的最外框 */
+.cart-box {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ecebeb;
+  margin-bottom: 56px;
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* 購物車欄位 */
+.cart-title {
+  width: 100%;
+  height: 100px;
+  background-color: #ecebeb;
+  font-size: 30px;
+  line-height: 50px;
+  padding-left: 25px; /* 依照設計搞，先統一pl-25 */
+}
+
+/* 收合購物車內容的動畫class */
+.show {
+  height: 647px;
+}
+
+.arrow-icon {
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  /* transform: translateX(-30%); */
+  transition: 0.2s;
+}
+.rotate {
+  transform: rotate(-180deg);
+}
+
+/* 購物車次欄位 */
+.cart-subtitle {
+  border-bottom: 1px solid #ecebeb;
+  padding-left: 25px;
+  height: 65px;
+}
+
+/* 購物車次欄位的共用css */
+.cart-subtitle .product-info,
+.discount,
+.per-price,
+.amount,
+.subtotal {
+  /* outline: 1px solid tomato; */
+  font-size: 20px;
+  line-height: 65px;
+}
+
+/* 依照不同寬度做調整 */
+.product-info {
+  width: 454px;
+}
+.discount {
+  width: 140px;
+}
+.per-price {
+  width: 140px;
+}
+.amount {
+  width: 200px;
+}
+.subtotal {
+  width: 110px;
+}
+
+.product-img {
+  width: 160px;
+  height: 160px;
+  background-color: #00a0f0;
+}
+
+/* 購物車商品欄位 */
+.cart-column {
+  border-bottom: 1px solid #ecebeb;
+  padding: 15px 0 15px 25px;
+  height: 190px;
+}
+
+/*  商品欄位裡面的文字大小、字型控制 */
+.cart-column span {
+  font-size: 20px;
+}
+
+.product-img {
+  margin-right: 10px;
+}
+
+.product-description {
+  max-width: 274px; /* 454-160-20(padding) */
+  font-size: 20px;
+}
+
+.number {
+  width: 78px;
+  text-align: center;
+  line-height: 33px;
+}
+
+/* 全站優惠 */
+.AllStore-discount-box {
+  padding: 10px 25px;
+}
+.column-1 {
+  height: 30px;
+  font-size: 18px;
+  /* outline: 1px solid red; */
+}
+.column-2 {
+  height: 40px;
+  font-size: 18px;
+}
+.color-box {
+  width: 160px;
+  height: 40px;
+  background-color: #d7f1ff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.finished-word{
+  width: 940px;
+  margin: auto;
+  font-size: 30px;
+  line-height: 45px;
+  margin-bottom: 50px;
+}
+
+.finished-word i {
+  color: green;
+  margin-right: 10px;
+}
+
+.order-detail-box{
+  width: 100%;
+  outline: 1px solid #ecebeb;
+}
+
+.order-detail-title{
+  width: 100%;
+  height: 70px;
+  background-color: #ecebeb;
+  font-size: 30px;
+  line-height: 70px;
+  padding-left: 25px; 
+}
+
+.order-detail-box .subtitle{
+  padding:15px 25px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.detail-box{
+  padding: 0 0px 10px 25px;
+  font-size: 20px;
+  line-height: 25px;
+}

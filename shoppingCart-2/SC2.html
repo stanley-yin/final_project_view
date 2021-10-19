@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/shoppingCart-2/SC2.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- checkline 進度條 -->
+        <div class="checkline-box d-flex justify-content-center">
+            <div class="checkline-item">
+                <div class="checkline-circle-1">1</div>
+                <div class="row justify-content-center">購物車</div>
+            </div>
+            <div class="checkline-line"></div>
+            <div class="checkline-item">
+                <div class="checkline-circle-1">2</div>
+                <div class="row justify-content-center">填寫資料</div>
+            </div>
+            <div class="checkline-line"></div>
+            <div class="checkline-item">
+                <div class="checkline-circle-2">3</div>
+                <div class="row justify-content-center">確認訂單</div>
+            </div>
+        </div>
+        <!-- cart購物車 -->
+        <div class="row">
+            <div class="cart-box">
+                <!-- 購物車標題 -->
+                <div class="cart-title text-center ">
+                    購物車 (共2件，合計800元)
+                    <div class="arrow-icon"><i class="fas fa-chevron-down"></i></div>
+                </div>
+
+                <div class="cart-content">
+                    <!-- 購物車欄位標題-->
+                    <div class="cart-subtitle d-flex">
+                        <div class="col-6 ">商品資料</div>
+                        <div class="col-2 text-center">單價</div>
+                        <div class="col-2 text-center">數量</div>
+                        <div class="col-2 text-right">小計</div>
+                    </div>
+                    <!-- 商品(一列) -->
+                    <div class="cart-column d-flex align-items-center">
+                        <div class="col-6 d-flex align-items-center">
+                            <div class="product-img"></div>
+                            <div class="product-description">善存科技 N95醫用口罩 (5入/單包)【杏一】</div>
+                        </div>
+                        <div class="col-2 text-center">NT$400</div>
+                        <div class="col-2 text-center">
+                            <div class="number">1</div>
+                        </div>
+                        <div class="col-2 text-right">NT$400</div>
+                    </div>
+                    <!-- 商品(一列) -->
+                    <div class="cart-column d-flex align-items-center">
+                        <div class="col-6 d-flex align-items-center">
+                            <div class="product-img"></div>
+                            <div class="product-description">善存科技 N95醫用口罩 (5入/單包)【杏一】</div>
+                        </div>
+                        <div class="col-2 text-center">NT$400</div>
+                        <div class="col-2 text-center">
+                            <div class="number">1</div>
+                        </div>
+                        <div class="col-2 text-right">NT$400</div>
+                    </div>
+
+                    <!-- 全站優惠&訂單價格 -->
+                    <div class="AllStore-discount-box">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="column-1">已享有之優惠</div>
+                                <div class="column-2 d-flex align-items-center">
+                                    <div class="color-box">全站優惠</div>
+                                    <div class="discount-word">全站滿500元免運</div>
+                                </div>
+                                <div class="col-6">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 訂購人資訊 -->
+        <div class="order-info-box">
+            <div class="order-info-title">訂購人資訊</div>
+            <div class="order-info-detail">
+                <!-- 姓名 -->
+                <label for="">姓名</label>
+                <br>
+                <input type="text" placeholder="請輸入真實姓名">
+                <!-- 電話 -->
+                <label for="">電話</label>
+                <br>
+                <div class="mobile d-flex">
+                    <select name="" id="">
+                        <option value="">+886</option>
+                        <option value="">+86</option>
+                    </select>
+                    <input type="text" placeholder="請輸入電話號碼">
+                </div>
+                <!-- 信箱 -->
+                <label for="">信箱</label>
+                <br>
+                <input type="text" placeholder="請輸入連絡信箱" disabled>
+            </div>
+        </div>
+
+        <!-- 收件人資訊 -->
+        <div class="receiver-info-box">
+            <div class="receiver-title">收件資訊</div>
+            <!-- 下方內容 -->
+            <div class="recevier-detail-box">
+                <!-- 同訂購人按鈕 -->
+                <input type="checkbox">
+                <label for="">同訂購人</label>
+                <br>
+                <!-- 收件人姓名 -->
+                <label for="">收件人姓名</label>
+                <br>
+                <input type="text">
+                <br>
+                <!-- 電話 -->
+                <label for="">電話</label>
+                <br>
+                <div class="mobile d-flex">
+                    <select name="" id="">
+                        <option value="">+886</option>
+                        <option value="">+86</option>
+                    </select>
+                    <input type="text" placeholder="請輸入電話號碼">
+                </div>
+            </div>
+
+            <!-- 超商取貨區塊 -->
+            <div class="convenience-store-box">
+                <div class="title">選擇取貨超商</div>
+                <div class="store-select-area row justify-content-between">
+                    <!-- 地址選擇區(左) -->
+                    <div class="col-4">
+                        <select name="storeBrand" id="storeBrand">
+                            <option value="">7-11</option>
+                            <option value="">全家</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">選擇縣市</option>
+                            <option value=""></option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">選擇鄉鎮市區</option>
+                            <option value=""></option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">街道</option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <!-- 門市選擇區 -->
+                    <div class="col-8">
+                        <div class="store-info-box d-flex justify-content-between">
+                            <!--  -->
+                            <div class="store-info ">
+                                <div class="store-name">和平島門市</div>
+                                <div class="store-address ">基隆市中正區和一路125巷127號</div>
+                            </div>
+                            <div class="store-info ">
+                                <div class="store-name">和平島門市</div>
+                                <div class="store-address ">基隆市中正區和一路125巷127號</div>
+                            </div>
+                        </div>
+                        <div class="btn-area d-flex justify-content-end">
+                            <button class="re-select-btn">重新選擇</button>
+                            <button class="confirm-btn">門市確認</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="order-note-box">
+                <div class="note-title">訂單備註</div>
+                <textarea class="note-content" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        <!-- 付款資訊-->
+        <div class="payment-box">
+            <div class="payment-title">付款資訊</div>
+            <div class="payment-info-box row">
+                <div class="col-6">
+                    <div class="credit-card-info">
+                        <label for="">信用卡種類</label>
+                        <br>
+                        <select name="" id="">
+                            <option value="">VISA</option>
+                            <option value="">Master-Card</option>
+                        </select>
+                        <br>
+                        <label for="">信用卡號碼</label>
+                        <br>
+                        <input type="text">
+                        <div class="d-flex ">
+                            <div class="col-6 margin-Revise">
+                                <label for="">有效期限(mm/yy)</label>
+                                <input type="text" class="expire-date">
+                            </div>
+                            <div class="col-6 ">
+                                <label for="">安全碼</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 信用卡部分，找範例補上 -->
+                <div class="col-6">
+                    <div class="credit-card-img"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 送出訂單按鈕 -->
+        <div class="submit-order-box">
+            <div class="agree-box d-flex">
+                <input type="checkbox">
+                <label for="">同意網站隱私條款</label>
+            </div>
+            <div class="submit-box d-flex justify-content-between align-items-center">
+                <!-- 返回上一步按鈕 -->
+                <div class="btn-group">
+                    <i class="fas fa-chevron-left"></i>
+                    <a class="goback-btn" href="/shoppingCart-1/shoppingCart.html">返回購物車</a>
+                </div>
+                <!-- 送出按鈕，換成react元件 -->
+                <a href="/shoppingCart-3/SC3.html" class="checkout-btn">前往結帳</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const cartTitle = document.querySelector('.cart-title')
+
+        const cartBox = document.querySelector('.cart-box')
+        const arrowIcon = document.querySelector('.arrow-icon')
+
+
+        cartTitle.addEventListener('click', () => {
+            cartBox.classList.toggle('show')
+            arrowIcon.classList.toggle('rotate')
+
+        })
+    </script>
+</body>
+
+</html>

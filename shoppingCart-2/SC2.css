@@ -1,0 +1,450 @@
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+/* Css reset */
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  /* border: 1px solid #ECEBEB; */
+  height: 900px;
+}
+
+.checkline-box {
+  margin: 50px;
+}
+.checkline-item {
+  width: 62px;
+}
+
+/* 深色正在進行的圓圈 */
+.checkline-circle-1 {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: #00a0f0;
+  color: white;
+  font-size: 31px;
+  text-align: center;
+  line-height: 62px;
+  margin-bottom: 10px;
+}
+
+/* 淺色尚未進行的圓圈 */
+.checkline-circle-2 {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: #aad7ee;
+  color: white;
+  font-size: 31px;
+  text-align: center;
+  line-height: 62px;
+  margin-bottom: 10px;
+}
+
+.checkline-line {
+  /* position: absolute; */
+  width: 186px;
+  height: 2px;
+  background-color: #aad7ee;
+  margin-top: 31px; /* 線要在圓心的一半 62/2=31 */
+}
+
+/* 購物車欄位的最外框 */
+.cart-box {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ecebeb;
+  margin-bottom: 56px;
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* 購物車欄位 */
+.cart-title {
+  width: 100%;
+  height: 100px;
+  background-color: #ecebeb;
+  font-size: 30px;
+  line-height: 50px;
+  padding-left: 25px; /* 依照設計搞，先統一pl-25 */
+}
+
+/* 收合購物車內容的動畫class */
+.show {
+  height: 647px;
+}
+
+.arrow-icon {
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  /* transform: translateX(-30%); */
+  transition: 0.2s;
+}
+.rotate {
+  transform: rotate(-180deg);
+}
+
+/* 購物車次欄位 */
+.cart-subtitle {
+  border-bottom: 1px solid #ecebeb;
+  padding: 0 25px ;
+  height: 65px;
+}
+
+/* 購物車次欄位的共用css */
+.cart-subtitle{
+  /* outline: 1px solid tomato; */
+  font-size: 20px;
+  line-height: 65px;
+}
+
+
+
+.product-img {
+  width: 160px;
+  height: 160px;
+  background-color: #00a0f0;
+}
+
+/* 購物車商品欄位 */
+.cart-column {
+  border-bottom: 1px solid #ecebeb;
+  padding: 15px 25px 15px 25px;
+  height: 190px;
+  font-size: 20px;
+}
+
+/*  商品欄位裡面的文字大小、字型控制 */
+.cart-column span {
+  font-size: 20px;
+}
+
+.product-img {
+  margin-right: 10px;
+}
+
+.product-description {
+  max-width: 274px; /* 454-160-20(padding) */
+  font-size: 20px;
+}
+
+
+/* 全站優惠 */
+.AllStore-discount-box {
+  padding: 10px 25px;
+}
+.column-1 {
+  height: 30px;
+  font-size: 18px;
+  /* outline: 1px solid red; */
+}
+.column-2 {
+  height: 40px;
+  font-size: 18px;
+}
+.color-box {
+  width: 160px;
+  height: 40px;
+  background-color: #d7f1ff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+/* 訂單價格 */
+
+/* 訂購人資訊 */
+.order-info-box {
+  width: 940px;
+  height: 486px;
+  outline: 1px solid #ecebeb;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.order-info-title {
+  width: 100%;
+  height: 70px;
+  background-color: #ecebeb;
+  font-size: 30px;
+  line-height: 70px;
+  padding-left: 25px;
+}
+
+.order-info-detail {
+  padding: 25px;
+  font-size: 20px;
+}
+
+.order-info-detail > input {
+  width: 100%;
+  height: 65px;
+  margin-bottom: 30px;
+}
+
+.mobile > input,
+select {
+  height: 65px;
+  margin-bottom: 30px;
+}
+
+.mobile > select {
+  width: 120px;
+  margin-right: 30px;
+}
+.mobile > input {
+  width: 100%;
+}
+
+/* 收件人資訊 */
+
+.receiver-info-box {
+  width: 940px;
+  /* height: 800px; */
+  margin: auto;
+  outline: 1px solid #ecebeb;
+  margin-bottom: 50px;
+}
+
+.receiver-title {
+  width: 100%;
+  height: 70px;
+  font-size: 30px;
+  line-height: 70px;
+  background-color: #ecebeb;
+  padding-left: 25px;
+}
+
+.recevier-detail-box {
+  padding: 25px;
+  font-size: 20px;
+}
+
+.recevier-detail-box input {
+  height: 65px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+input:nth-child(1) {
+  height: 20px;
+  width: 20px;
+}
+
+/* 超商取貨 */
+.convenience-store-box {
+  padding: 0 25px;
+}
+.convenience-store-box .title {
+  font-size: 24px;
+  font-weight: bolder;
+  padding-bottom: 7px;
+  border-bottom: 1px solid black;
+}
+
+.store-select-area{
+  width: 100%;
+  height: 400px;
+  /* outline: 1px solid black; */
+  padding: 25px 0;
+}
+
+.store-select-area select{
+  width: 100%;
+  padding: 0;
+  margin-bottom: 10px; ;
+}
+
+.store-info-box{
+  outline: 1px solid black;
+  padding: 15px;
+  height: 220px;
+  margin-right: -30px;
+  margin-bottom: 30px;
+}
+
+.store-info{
+  background-color: #d5e8f1;
+  width: 260px;
+  height: 70px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.store-info:hover{
+  background-color: #aad7ee;
+
+}
+
+.store-name{
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+.store-address{
+  font-size: 16px;
+}
+
+/* 超取選擇、確認按鈕 */
+
+.btn-area{
+  margin-right: -30px;
+}
+.re-select-btn{
+  width: 140px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-right: 20px;
+}
+.confirm-btn{
+  width: 140px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #aad7ee;
+}
+
+.order-note-box{
+  padding: 0 25px;
+}
+
+.note-title{
+  font-size: 24px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+.note-content{
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+
+}
+
+/* 付款資訊 */
+.payment-box{
+  width: 940px;
+  outline: 1px solid #ecebeb;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.payment-title{
+  width: 100%;
+  height: 70px;
+  font-size: 30px;
+  line-height: 70px;
+  background-color: #ecebeb;
+  padding-left: 25px;
+}
+
+.payment-info-box{
+  width: 100%;
+  padding: 25px;
+  font-size: 20px;
+}
+
+
+
+.credit-card-info select{
+  width: 100%;
+}
+
+/* 先在這設定統一的input大小 */
+input{
+  height: 65px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.margin-Revise{
+  width: 100%;
+  /* outline: 1px solid red; */
+  margin: 0 30px 0 -15px;
+}
+
+.submit-order-box{
+  width: 940px;
+  margin: auto;
+  height: 200px;
+  outline: 1px solid #ecebeb;
+}
+
+.agree-box{
+  padding: 25px 0 0 25px;
+  border-bottom: 1px solid #ecebeb;
+}
+.agree-box > label{
+  height: 20px;
+  margin-left: 5px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.submit-box{
+  padding: 25px;
+}
+.goback-btn{
+  
+}
+.checkout-btn {
+  width: 360px;
+  height: 77px;
+  background-color: #00a0f0;
+  border-radius: 20px;
+  bottom: 30px;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 77px;
+  font-weight: bolder;
+}

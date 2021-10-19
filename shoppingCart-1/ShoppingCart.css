@@ -1,0 +1,306 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+/* Css reset */
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  /* border: 1px solid #ECEBEB; */
+  height: 900px;
+}
+
+.checkline-box {
+  margin: 50px;
+}
+.checkline-item {
+  width: 62px;
+}
+
+/* 深色正在進行的圓圈 */
+.checkline-circle-1 {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: #00a0f0;
+  color: white;
+  font-size: 31px;
+  text-align: center;
+  line-height: 62px;
+  margin-bottom: 10px;
+}
+
+/* 淺色尚未進行的圓圈 */
+.checkline-circle-2 {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: #aad7ee;
+  color: white;
+  font-size: 31px;
+  text-align: center;
+  line-height: 62px;
+  margin-bottom: 10px;
+}
+
+.checkline-line {
+  /* position: absolute; */
+  width: 186px;
+  height: 2px;
+  background-color: #aad7ee;
+  margin-top: 31px; /* 線要在圓心的一半 62/2=31 */
+}
+
+/* 購物車欄位的最外框 */
+.cart-box {
+  width: 100%;
+  height: 647px;
+  border: 1px solid #ecebeb;
+  margin-bottom: 56px;
+}
+
+/* 購物車欄位 */
+.cart-title {
+  width: 100%;
+  height: 70px;
+  background-color: #ecebeb;
+  font-size: 30px;
+  line-height: 70px;
+  padding-left: 25px; /* 依照設計搞，先統一pl-25 */
+}
+
+/* 購物車次欄位 */
+.cart-subtitle {
+  border-bottom: 1px solid #ecebeb;
+  padding-left: 25px;
+  height: 65px;
+}
+
+/* 購物車次欄位的共用css */
+.cart-subtitle .product-info,
+.discount,
+.per-price,
+.amount,
+.subtotal,
+.delete {
+  /* outline: 1px solid tomato; */
+  font-size: 20px;
+  line-height: 65px;
+}
+
+/* 依照不同寬度做調整 */
+.product-info {
+  width: 454px;
+}
+.discount {
+  width: 140px;
+}
+.per-price {
+  width: 140px;
+}
+.amount {
+  width: 200px;
+}
+.subtotal {
+  width: 110px;
+}
+.delete {
+  width: 73px;
+}
+
+.product-img {
+  width: 160px;
+  height: 160px;
+  background-color: #00a0f0;
+}
+
+/* 購物車商品欄位 */
+.cart-column {
+  border-bottom: 1px solid #ecebeb;
+  padding: 15px 0 15px 25px;
+  height: 190px;
+}
+
+/*  商品欄位裡面的文字大小、字型控制 */
+.cart-column span {
+  font-size: 20px;
+}
+
+.product-img {
+  margin-right: 10px;
+}
+
+.product-description {
+  max-width: 274px; /* 454-160-20(padding) */
+  font-size: 20px;
+}
+.plus-minus-btn {
+  width: 144px;
+  height: 33px;
+  outline: 1px solid black;
+}
+
+.minus {
+  width: 33px;
+  height: 33px;
+  outline: 1px solid black;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  width: 78px;
+  text-align: center;
+  line-height: 33px;
+}
+.plus {
+  width: 33px;
+  height: 33px;
+  outline: 1px solid black;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 全站優惠 */
+.AllStore-discount-box {
+  padding: 10px 25px;
+}
+.column-1 {
+  height: 30px;
+  font-size: 18px;
+  /* outline: 1px solid red; */
+}
+.column-2 {
+  height: 40px;
+  font-size: 18px;
+}
+.color-box {
+  width: 160px;
+  height: 40px;
+  background-color: #d7f1ff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+/* 送貨及付款方式 */
+.delivery-payment-box {
+  width: 668px;
+  height: 478px;
+  outline: 1px solid #ecebeb;
+}
+
+/* 共用的title大小 */
+.delivery-payment-title,
+.summary-title {
+  width: 100%;
+  height: 70px;
+  background-color: #ecebeb;
+  font-size: 30px;
+  line-height: 70px;
+  padding-left: 25px;
+}
+
+.dp-select-area {
+  padding: 15px 25px;
+  font-size: 20px;
+}
+.dp-select-area > .subtitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.dp-select {
+  width: 623px;
+  height: 65px;
+  margin-bottom: 30px;
+}
+
+/* 訂單明細 */
+.summary-box {
+  position: relative;
+  width: 410px;
+  height: 478px;
+  outline: 1px solid #ecebeb;
+}
+
+.summary-detail-box {
+  width: 100%;
+  padding: 25px;
+}
+.summary-box .summary-detail {
+  width: 100%;
+  font-size: 20px;
+  line-height: 55px;
+}
+
+.border {
+  margin-top: 40px;
+  border-bottom: 1px solid black;
+}
+
+.checkout-btn {
+  position: absolute;
+  width: 360px;
+  height: 77px;
+  background-color: #00a0f0;
+  border-radius: 20px;
+  bottom: 30px;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 77px;
+  font-weight: bolder;
+}
