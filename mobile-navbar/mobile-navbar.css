@@ -1,0 +1,79 @@
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+/* Css reset */
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* =========== 以下正式css ================================= */
+@media screen and (max-width: 376px) {
+  .navbar-box {
+    width: 100%;
+  }
+
+  .header{
+      height: 55px;
+      background-color: white; 
+      outline: 1px solid black;
+  }
+
+  .nav-bar{
+      background-color: #EEF7FC;
+  }
+  .about-us,.information,.online-shop,.health-knowledge{
+      padding: 20px 30px;
+      height: 70px;
+      color: #00A0F0;
+      border-bottom: 1px dashed #00A0F0
+  }
+
+  .health-knowledge{
+      border: none;
+  }
+  .title{
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,89 @@
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+/* Css reset */
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* =========== 以下正式css ================================= */
+.field-title {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #00a0f0;
+  padding: 10px;
+}
+
+.field-content {
+  font-size: 20px;
+  border-bottom: 1px solid #00a0f0;
+  padding: 15px;
+}
+
+/* hover效果可以之後再改 */
+.field-content:hover {
+  background-color: #abdbf37e;
+}
+
+input {
+  width: 20px;
+  height: 20px;
+}
+
+.red-word{
+    color: red;
+}
+
+@media screen and (max-width:376px) {
+  .field-content-box {
+    background-color: #ebf8fda1;
+    font-size: 10px;
+  }
+  .field-content {
+    font-size: 16px;
+    line-height: 25px;
+    border-bottom: 1px solid #00a0f0;
+    padding: 15px;
+  }
+}

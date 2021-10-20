@@ -1,0 +1,94 @@
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+/* Css reset */
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* =========== 以下正式css ================================= */
+.order-detail-box{
+    width: 100%;
+    background-color: #EEF7FC;
+    border-radius: 20px;
+    padding: 25px 50px;
+    margin-top: 50px;
+}
+
+
+.detail-title{
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.detail-content{
+    font-size: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #b2b6b8;
+}
+
+@media screen and (max-width:376px){
+    .order-detail-box{
+        width: 100%;
+        background-color: #EEF7FC;
+        border-radius: 10px;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+
+    
+    .detail-content{
+        font-size: 16px;
+        padding: 15px;
+        border-bottom: 1px solid #b2b6b8;
+    }
+
+    .detail-content:nth-last-child(1){
+        border-bottom: none;
+    }
+    .red-word{
+        color: red;
+    }
+}

@@ -48,35 +48,35 @@ table {
 }
 
 /* =========== 以下正式css ================================= */
-/* 結帳進度條 */
+
 .checkline-box {
-  width: 100%;
-  margin: 50px 0;
-  font-size: 22px;
+  margin: 50px;
 }
 .checkline-item {
   width: 62px;
 }
 
-/* 1是深色正在進行的圓圈 */
+/* 深色正在進行的圓圈 */
 .checkline-circle-1 {
   width: 62px;
   height: 62px;
   border-radius: 50%;
   background-color: #00a0f0;
   color: white;
+  font-size: 31px;
   text-align: center;
   line-height: 62px;
   margin-bottom: 10px;
 }
 
-/* 2是淺色尚未進行的圓圈 */
+/* 淺色尚未進行的圓圈 */
 .checkline-circle-2 {
   width: 62px;
   height: 62px;
   border-radius: 50%;
   background-color: #aad7ee;
   color: white;
+  font-size: 31px;
   text-align: center;
   line-height: 62px;
   margin-bottom: 10px;
@@ -90,24 +90,10 @@ table {
   margin-top: 31px; /* 線要在圓心的一半 62/2=31 */
 }
 
-/* 完成訂單文字 */
-.finished-word {
-  width: 940px;
-  margin: auto;
-  font-size: 30px;
-  line-height: 45px;
-  margin-bottom: 50px;
-}
-
-.finished-word i {
-  color: green;
-  margin-right: 10px;
-}
-
 /* 購物車欄位的最外框 */
 .cart-box {
   width: 100%;
-  height: 100px;
+  height: 700px;
   outline: 1px solid #ecebeb;
   margin-bottom: 35px;
   overflow: hidden;
@@ -125,8 +111,8 @@ table {
 }
 
 /* 收合購物車內容的動畫class */
-.show {
-  height: 700px;
+.hide {
+  height: 100px;
 }
 
 .arrow-icon {
@@ -214,6 +200,32 @@ table {
   margin: 10px 0;
 }
 
+.order-detail-box {
+  width: 100%;
+  outline: 1px solid #ecebeb;
+}
+
+.order-detail-title {
+  width: 100%;
+  height: 70px;
+  background-color: #ecebeb;
+  font-size: 30px;
+  line-height: 70px;
+  padding-left: 25px;
+}
+
+.order-detail-box .subtitle {
+  padding: 15px 25px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.detail-box {
+  padding: 0 0px 10px 25px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
 /* 訂單明細 */
 .order-detail-box {
   width: 100%;
@@ -241,6 +253,9 @@ table {
   line-height: 25px;
 }
 
+.red-word{
+  color: red;
+}
 @media screen and (max-width: 376px) {
   /* 結帳進度條 */
   .checkline-box {
@@ -283,27 +298,12 @@ table {
     background-color: #aad7ee;
     margin-top: 25px;
   }
-
-  /* 完成訂單文字 */
-  .finished-word {
-    width: auto;
-    margin: auto;
-    font-size: 16px;
-    line-height: 30px;
-    margin-bottom: 20px;
-  }
-
-  .finished-word i {
-    color: green;
-    margin-right: 10px;
-  }
-
   /* 購物車欄位的最外框 */
   .cart-box {
     width: 100%;
-    height: 60px;
+    height: 530px;
     border: 1px solid #ecebeb;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     overflow: hidden;
     transition: 0.3s;
     cursor: pointer;
@@ -325,8 +325,8 @@ table {
   }
 
   /* 收合購物車內容的動畫class */
-  .show {
-    height: 530px; /* 高寫死>>有什麼辦法不寫死又可以做到動畫效果呢? */
+  .hide {
+    height: 60px; /* 高寫死>>有什麼辦法不寫死又可以做到動畫效果呢? */
   }
 
   .arrow-icon {
@@ -387,14 +387,12 @@ table {
     margin: 5px 0;
     color: #19526e;
   }
-  
-  /* 訂單明細 */
+
   .order-detail-box {
     width: 100%;
     outline: 1px solid #ecebeb;
   }
 
-  
   .order-detail-title {
     width: 100%;
     height: 45px;
